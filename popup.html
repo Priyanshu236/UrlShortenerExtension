@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="popup.js"></script>
+</head>
+<body style="width: 300px;">
+    <div style="margin: 2px;">
+        <div class="p-3 mb-2 bg-danger text-white" id="error-msg" style="display: none;">Enter a valid url</div>
+        <h1>Url Shortener</h1>
+        <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2"  class="sr-only">Enter the Url</label>
+                <input type="text" class="form-control" id="short_url" placeholder="Url">
+            </div>
+            <button  id="short_btn" class="btn btn-primary mb-2">Shorten Url</button>
+        </form>
+        <div class="alert alert-success" id="short-link" role="alert" style="display: none;">
+        
+          </div>
+    </div>
+</body>
+</html>
